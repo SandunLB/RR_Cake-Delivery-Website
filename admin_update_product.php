@@ -72,7 +72,7 @@ if(isset($_POST['update_product'])){
    <input type="number" min="0" class="box" value="<?php echo $fetch_products['price']; ?>" required placeholder="update product price" name="price">
    <input type="file" accept="image/jpg, image/jpeg, image/png" class="box" name="image">
    <input type="submit" value="update product" name="update_product" class="btn">
-   <a href="admin_products.php" class="option-btn">go back</a>
+   <a href="admin_products.php" class="option-btn">Back</a>
 </form>
 
 <?php
