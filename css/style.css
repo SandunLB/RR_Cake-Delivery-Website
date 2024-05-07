@@ -46,8 +46,13 @@ html{
 }
 
 body{
-   background: var(--light-bg);
+   background-image: url('../images/R2.jpg');
+   background-size: cover; 
+   background-attachment: fixed;
+   background-position: center;
+   
 }
+
 
 section{
    padding:3rem 2rem;
@@ -1098,7 +1103,7 @@ section{
 
 
 .footer{
-   background-color: var(--white);
+   background-color: transparent;
 }
 
 
