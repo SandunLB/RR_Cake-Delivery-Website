@@ -114,13 +114,13 @@ section{
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: rgb(33, 173, 33);
 }
 
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--black);
+   background-color: rgb(17, 121, 39);
 }
 
 .empty{
@@ -561,6 +561,7 @@ section{
 .products .box-container .box .btn,
 .products .box-container .box .option-btn{
    width: 100%;
+
 }
 
 .quick-view form{
