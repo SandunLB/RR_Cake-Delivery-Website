@@ -236,7 +236,8 @@ section{
 .header{
    position: sticky;
    top:0; left:0; right:0;
-   background-color: var(--white);
+   backdrop-filter: blur(10px);
+   background-color: rgba(255, 255, 255, 0.5);
    z-index: 1000;
    box-shadow: var(--box-shadow);
 }
@@ -247,7 +248,6 @@ section{
    align-items: center;
    justify-content: space-between;
    padding:1.5rem 2rem;
-   max-width: 1200px;
    position: relative;
 }
 
@@ -274,8 +274,7 @@ section{
 }
 
 .header .flex .navbar ul li a:hover{
-   background-color: var(--pink);
-   color:var(--white);
+   color:var(--pink);
 }
 
 .header .flex .navbar ul li ul{
@@ -1021,7 +1020,6 @@ section{
 
 .checkout form{
    background-color: var(--white);
-   border:var(--border);
    max-width: 1200px;
    margin:0 auto;
    border-radius: .5rem;
@@ -1056,7 +1054,6 @@ section{
    width: 100%;
    background-color: var(--light-bg);
    padding:1.2rem 1.4rem;
-   border:var(--border);
    font-size: 1.8rem;
    color:var(--black);
    border-radius: .5rem;

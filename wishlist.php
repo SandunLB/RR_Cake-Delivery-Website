@@ -55,7 +55,7 @@ if(isset($_GET['delete_all'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>wishlist</title>
+   <title>Wishlist</title>
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -64,7 +64,7 @@ if(isset($_GET['delete_all'])){
 <?php @include 'header.php'; ?>
 
 <section class="heading">
-    <h3>Wishlist</h3>
+    <h3>&#10084;</h3>
 </section>
 
 <section class="wishlist">
@@ -78,11 +78,9 @@ if(isset($_GET['delete_all'])){
             while($fetch_wishlist = mysqli_fetch_assoc($select_wishlist)){
     ?>
     <form action="" method="POST" class="box">
-        <a href="wishlist.php?delete=<?php echo $fetch_wishlist['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from wishlist?');"></a>
-        <a href="view_page.php?pid=<?php echo $fetch_wishlist['pid']; ?>" class="fas fa-eye"></a>
         <img src="uploaded_img/<?php echo $fetch_wishlist['image']; ?>" alt="" class="image">
         <div class="name"><?php echo $fetch_wishlist['name']; ?></div>
-        <div class="price">₹<?php echo $fetch_wishlist['price']; ?>/-</div>
+        <div class="price">Rs<?php echo $fetch_wishlist['price']; ?>.00</div>
         <input type="hidden" name="product_id" value="<?php echo $fetch_wishlist['pid']; ?>">
         <input type="hidden" name="product_name" value="<?php echo $fetch_wishlist['name']; ?>">
         <input type="hidden" name="product_price" value="<?php echo $fetch_wishlist['price']; ?>">
@@ -100,8 +98,8 @@ if(isset($_GET['delete_all'])){
     </div> 
 
     <div class="wishlist-total">
-        <p>grand total : <span>Rs.<?php echo $grand_total; ?>.00</span></p>
-        <a href="shop.php" class="option-btn">continue shopping</a>
+        <p>Total : <span>Rs.<?php echo $grand_total; ?>.00</span></p>
+        <a href="shop.php" class="option-btn">Continue</a>
         <a href="wishlist.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled' ?>" onclick="return confirm('delete all from wishlist?');">Delete all</a>
     </div>
 

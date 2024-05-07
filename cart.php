@@ -36,12 +36,7 @@ if(isset($_POST['update_quantity'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>shopping cart</title>
-
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-   <!-- custom admin css file link  -->
+   <title>Shopping Cart</title>
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -50,13 +45,13 @@ if(isset($_POST['update_quantity'])){
 <?php @include 'header.php'; ?>
 
 <section class="heading">
-    <h3>shopping cart</h3>
-    <p> <a href="home.php">home</a> / cart </p>
+    <h3>&#128722;</h3>
+    
 </section>
 
 <section class="shopping-cart">
 
-    <h1 class="title">products added</h1>
+    <h1 class="title">Added Items</h1>
 
     <div class="box-container">
 
@@ -67,17 +62,15 @@ if(isset($_POST['update_quantity'])){
             while($fetch_cart = mysqli_fetch_assoc($select_cart)){
     ?>
     <div  class="box">
-        <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a>
-        <a href="view_page.php?pid=<?php echo $fetch_cart['pid']; ?>" class="fas fa-eye"></a>
         <img src="uploaded_img/<?php echo $fetch_cart['image']; ?>" alt="" class="image">
         <div class="name"><?php echo $fetch_cart['name']; ?></div>
-        <div class="price">₹<?php echo $fetch_cart['price']; ?>/-</div>
+        <div class="price">Rs.<?php echo $fetch_cart['price']; ?>.00</div>
         <form action="" method="post">
             <input type="hidden" value="<?php echo $fetch_cart['id']; ?>" name="cart_id">
             <input type="number" min="1" value="<?php echo $fetch_cart['quantity']; ?>" name="cart_quantity" class="qty">
             <input type="submit" value="update" class="option-btn" name="update_quantity">
         </form>
-        <div class="sub-total"> sub-total : <span>$<?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>/-</span> </div>
+        <div class="sub-total"> Sub-Total : <span>Rs.<?php echo $sub_total = ($fetch_cart['price'] * $fetch_cart['quantity']); ?>.00</span> </div>
     </div>
     <?php
     $grand_total += $sub_total;
@@ -93,9 +86,9 @@ if(isset($_POST['update_quantity'])){
     </div>
 
     <div class="cart-total">
-        <p>grand total : <span>₹<?php echo $grand_total; ?>/-</span></p>
-        <a href="shop.php" class="option-btn">continue shopping</a>
-        <a href="checkout.php" class="btn  <?php echo ($grand_total > 1)?'':'disabled' ?>">proceed to checkout</a>
+        <p>Total : <span>Rs.<?php echo $grand_total; ?>.00</span></p>
+        <a href="shop.php" class="option-btn">Continue</a>
+        <a href="checkout.php" class="btn  <?php echo ($grand_total > 1)?'':'disabled' ?>">Checkout</a>
     </div>
 
 </section>

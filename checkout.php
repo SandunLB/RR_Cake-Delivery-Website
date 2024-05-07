@@ -54,12 +54,7 @@ if(isset($_POST['order'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>checkout</title>
-
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-   <!-- custom admin css file link  -->
+   <title>Checkout</title>
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -68,8 +63,7 @@ if(isset($_POST['order'])){
 <?php @include 'header.php'; ?>
 
 <section class="heading">
-    <h3>checkout order</h3>
-    <p> <a href="home.php">home</a> / checkout </p>
+    <h3>Checkout</h3>
 </section>
 
 <section class="display-order">
@@ -81,67 +75,66 @@ if(isset($_POST['order'])){
             $total_price = ($fetch_cart['price'] * $fetch_cart['quantity']);
             $grand_total += $total_price;
     ?>    
-    <p> <?php echo $fetch_cart['name'] ?> <span>(<?php echo '₹'.$fetch_cart['price'].'/-'.' x '.$fetch_cart['quantity']  ?>)</span> </p>
+    <p> <?php echo $fetch_cart['name'] ?> <span>(<?php echo 'Rs.'.$fetch_cart['price'].'.00'.' x '.$fetch_cart['quantity']  ?>)</span> </p>
     <?php
         }
         }else{
             echo '<p class="empty">your cart is empty</p>';
         }
     ?>
-    <div class="grand-total">grand total : <span>₹<?php echo $grand_total; ?>/-</span></div>
+    <div class="grand-total">Total : <span>Rs.<?php echo $grand_total; ?>.00</span></div>
 </section>
 
 <section class="checkout">
 
     <form action="" method="POST">
 
-        <h3>place your order</h3>
+        <h3>Place Order</h3>
 
         <div class="flex">
             <div class="inputBox">
-                <span>your name :</span>
-                <input type="text" name="name" placeholder="enter your name">
+                <span>Name :</span>
+                <input type="text" name="name" placeholder="">
             </div>
             <div class="inputBox">
-                <span>your number :</span>
-                <input type="number" name="number" min="0" placeholder="enter your number">
+                <span>Mobile Number :</span>
+                <input type="number" name="number" min="0" placeholder="">
             </div>
             <div class="inputBox">
-                <span>your email :</span>
-                <input type="email" name="email" placeholder="enter your email">
+                <span>E-mail :</span>
+                <input type="email" name="email" placeholder="">
             </div>
             <div class="inputBox">
-                <span>payment method :</span>
+                <span>Payment Method:</span>
                 <select name="method">
-                    <option value="cash on delivery">cash on delivery</option>
-                    <option value="credit card">credit card</option>
-                    <option value="paypal">paypal</option>
-                    <option value="paytm">paytm</option>
+                    <option value="cash on delivery">Cash on Delivery</option>
+                    <option value="credit card">Credit Card</option>
+                    <option value="paypal">Paypal</option>
                 </select>
             </div>
             <div class="inputBox">
                 <span>address line 01 :</span>
-                <input type="text" name="flat" placeholder="e.g. flat no.">
+                <input type="text" name="flat" placeholder="">
             </div>
             <div class="inputBox">
                 <span>address line 02 :</span>
-                <input type="text" name="street" placeholder="e.g.  streen name">
+                <input type="text" name="street" placeholder="">
             </div>
             <div class="inputBox">
-                <span>city :</span>
-                <input type="text" name="city" placeholder="e.g. mumbai">
+                <span>City :</span>
+                <input type="text" name="city" placeholder="">
             </div>
             <div class="inputBox">
-                <span>state :</span>
-                <input type="text" name="state" placeholder="e.g. maharashtra">
+                <span>State :</span>
+                <input type="text" name="state" placeholder="">
             </div>
             <div class="inputBox">
-                <span>country :</span>
-                <input type="text" name="country" placeholder="e.g. india">
+                <span>Country :</span>
+                <input type="text" name="country" placeholder="">
             </div>
             <div class="inputBox">
-                <span>pin code :</span>
-                <input type="number" min="0" name="pin_code" placeholder="e.g. 123456">
+                <span>Postal Code:</span>
+                <input type="number" min="0" name="pin_code" placeholder="">
             </div>
         </div>
 

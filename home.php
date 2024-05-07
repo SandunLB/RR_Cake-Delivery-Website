@@ -99,11 +99,11 @@ if (isset($_POST['add_to_cart'])) {
 
          <div class="video-container">
             <video src="videos/video.mp4" loop autoplay muted></video>
-            <h3>best cake sellers</h3>
+            <h3>Best Cake Sellers</h3>
          </div>
 
          <div class="content">
-            <h3>why choose us?</h3>
+            <h3>Why Choose Us?</h3>
             <p>Whenever you visit a bakery, you will see a selective range of cakes. Since you are obviously buying a cake for an important occasion, you will be visiting many local bakeries before choosing one special cake. If you decide to buy the cake online, you can browse through larger variety of cakes in one e-commerce shop than you would in almost all local bakeries combined.
 
             <div>
@@ -116,41 +116,29 @@ if (isset($_POST['add_to_cart'])) {
 
    </section>
 
-   <!-- about section ends -->
-
-   <!-- icons section starts  -->
-
    <section class="icons-container">
 
       <div class="icons">
          <img src="images/icon-1.png" alt="">
          <div class="info">
-            <h3>free delivery</h3>
-            <span>on all orders</span>
-         </div>
-      </div>
-
-      <div class="icons">
-         <img src="images/icon-2.png" alt="">
-         <div class="info">
-            <h3>10 days returns</h3>
-            <span>moneyback guarantee</span>
+            <h3>Free Delivery</h3>
+            <span>On All Locations</span>
          </div>
       </div>
 
       <div class="icons">
          <img src="images/icon-3.png" alt="">
          <div class="info">
-            <h3>offer & gifts</h3>
-            <span>on all orders</span>
+            <h3>Offer & Fifts</h3>
+            <span>On All Orders</span>
          </div>
       </div>
 
       <div class="icons">
          <img src="images/icon-4.png" alt="">
          <div class="info">
-            <h3>secure payments</h3>
-            <span>protected by paypal</span>
+            <h3>Secure Payments</h3>
+            <span>Protected Methods</span>
          </div>
       </div>
 
@@ -159,7 +147,6 @@ if (isset($_POST['add_to_cart'])) {
 
    <section class="products">
 
-      <h1 class="title"> <span> latest </span> products</h1>
 
       <div class="box-container">
 
