@@ -35,12 +35,12 @@ if(!isset($user_id)){
     <div class="flex">
 
         <div class="image">
-            <img src="images/Chiffon cake.jpg" alt="">
+            <img src="images/AAA.webp" alt="">
         </div>
 
         <div class="content">
-            <h3>why choose us?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <h3>Why Choose Us?</h3>
+            <p>At RR bakery, we understand that every celebration deserves something special. That's why we strive to create cakes that not only look stunning but also taste divine. With our dedication to quality and craftsmanship, we ensure that every cake we bake becomes the centerpiece of your memorable moments.</p>
             
         </div>
 
@@ -49,13 +49,13 @@ if(!isset($user_id)){
     <div class="flex">
 
         <div class="content">
-            <h3>what we provide?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <h3>What We Provide?</h3>
+            <p>Our range of delectable cakes caters to every occasion, from birthdays and weddings to anniversaries and corporate events. Whether you're craving a classic chocolate cake, a whimsical fondant masterpiece, or a custom-designed creation, we have something to delight every palate. With our commitment to using the finest ingredients and innovative techniques, we guarantee a cake that exceeds your expectations.</p>
             
         </div>
 
         <div class="image">
-            <img src="images/strowberry 2.jpg" alt="">
+            <img src="images/birthday-cake-happy-birthday-cake-birthday-cake-transparent-background-ai-generative-free-png.webp" alt="">
         </div>
 
     </div>
@@ -63,12 +63,12 @@ if(!isset($user_id)){
     <div class="flex">
 
         <div class="image">
-            <img src="images/sponge cake.jpg" alt="">
+            <img src="images/chocolate-cake-happy-birthday-chocolate-cake-ai-generative-free-png.webp" alt="">
         </div>
 
         <div class="content">
-            <h3>who we are?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odit voluptatum alias sed est in magni nihil nisi deleniti nostrum.</p>
+            <h3>Who We Are?</h3>
+            <p>At the heart of RR is a team of passionate bakers and artists who share a love for all things sweet. With years of experience and a flair for creativity, our talented team brings your cake dreams to life. We take pride in our attention to detail, ensuring that each cake is not only visually stunning but also a true reflection of your personality and style.</p>
             
         </div>
 
