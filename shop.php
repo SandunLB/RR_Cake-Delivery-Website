@@ -99,7 +99,7 @@ if(isset($_POST['add_to_cart'])){
                   <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
                   <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
                   <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
-                  <input type="submit" value="add to wishlist" name="add_to_wishlist" class="option-btn">
+                  <input type="submit" value="&#10084;" name="add_to_wishlist" class="option-btn">
                   <input type="submit" value="add to cart" name="add_to_cart" class="btn">
                </form>
       <?php
