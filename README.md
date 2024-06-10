@@ -1,1 +1,1 @@
-**Cake Shop Website Using Pure PHP , JS , CSS & MYSQL**
+**Cake Shop Website Using Pure PHP, CSS , JavaScript & MYSQL**
