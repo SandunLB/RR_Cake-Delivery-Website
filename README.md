@@ -26,7 +26,7 @@ Welcome to the Cake Website repository! This project is a sophisticated web appl
 
 2. **Set up the database**:
     - Create a MySQL database.
-    - Import the `database.sql` file to set up the necessary tables.
+    - Import the `cake.sql` file to set up the necessary tables.
     ```sh
     mysql -u username -p database_name < database.sql
     ```
